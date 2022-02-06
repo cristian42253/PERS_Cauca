@@ -1,0 +1,20 @@
+---
+title: "PERS Cauca"
+author: "Cristian García - Luis Felipe Jimenez"
+date: "2/6/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##	Introducción
+
+El presente documento tiene como propósito básico explicar la metodología utilizada en el proceso de determinación de la muestra representativa para la población rural del Departamento del Cauca. Esto se realiza a partir del diseño de instrumentos estadísticos apropiados para el levantamiento de información primaria.
+Este documento será la guía para el trabajo de campo que se desarrollará durante la ejecución del Plan de Energización Rural y Sostenible (PERS) Cauca y busca tener información en torno al aprovechamiento de la energía por fuente, tenencia y usos para diversos sectores, en especial, el residencial y otros como el comercial e industrial.
+
+El documento consta de cuatro partes: i) los objetivos, los cuales muestran la relevancia del PERS Cauca en su contexto geopolítico; ii) el diseño de la muestra del proyecto; iii) la población objeto del estudio, que para el caso del departamento será de 275.985 viviendas existentes en el área rural del territorio y iv) el tamaño de muestra de 2.091 encuestas que se aplicarán en igual número de viviendas en las siete (7) regiones y 63 encuestas adicionales para unidades comerciales e industriales. 
+
+Adicionalmente se cuenta con un repositorio GIT-Hub en el cuál se tienen los controles de versiones y archivos necearios para el desarrollo del proyecto. (see <https://github.com/cristian42253/PERS_Cauca> )
+
