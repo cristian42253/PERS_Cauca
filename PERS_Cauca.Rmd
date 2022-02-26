@@ -1,0 +1,178 @@
+---
+output:
+  pdf_document:
+    citation_package: natbib
+    fig_caption: yes
+    number_sections: true
+header-includes:
+   - \usepackage{booktabs}
+   - \usepackage[spanish,onelanguage,ruled,vlined]{algorithm2e}
+   - \usepackage{caption}
+   - \captionsetup[figure]{name=Figura}
+   - \captionsetup[algorithm]{name=Algoritmo}
+   - \captionsetup[Table]{name=Tabla}
+   - \usepackage{enumitem}
+   - \usepackage{hyperref}
+   - \usepackage{fancyhdr}
+   - \pagestyle{fancy}
+   - \fancyhead[CO,CE]{}
+   - \fancyfoot[CO,CE]{}
+   - \fancyfoot[LE,RO]{\thepage}
+   - \fancyhead[L,C]{}
+   - \fancyhead[R]{PERS Cauca}
+   - \usepackage[export]{adjustbox}
+
+
+link-citations: yes
+linkcolor: blue
+nocite: '@*'
+fontsize: 12pt
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+\begin{center}
+\Large{\textbf{Notas Técnicas y Anexos} \\[0.5cm]
+Documento Metodológico} 
+\end{center} 
+
+\vspace{5cm}
+\begin{flushleft}
+    \begin{center}
+        \sc
+        Convenio interadministrativo UPME No. CV-008-202, IPSE No.147-2021, suscrito entre la Unidad de planeación minero energética- UPME; el Instituto de planificación y promoción de soluciones energéticas para las zonas no interconectadas - IPSE y la Universidad del Cauca.
+        \end{center}
+    \end{flushleft}
+\vspace{3cm}
+
+
+
+
+```{=tex}
+\begin{center}
+	
+\includegraphics[width=4.5cm]{ipse.png}\hfill\includegraphics[width=4.5cm]{unicauca.png}\hfill\includegraphics[width=4.5cm]{upme.png}
+\end{center}
+ 
+
+```
+
+\vspace{3cm}
+
+\begin{center}
+PERS Cauca \\
+Plan de energización Rural Sostenible
+\end{center} 
+
+\newpage
+
+
+
+#	Introducción
+
+El presente documento tiene como propósito básico explicar la metodología utilizada en el proceso de determinación de la muestra representativa para la población rural del Departamento del Cauca. Esto se realiza a partir del diseño de instrumentos estadísticos apropiados para el levantamiento de información primaria.
+Este documento será la guía para el trabajo de campo que se desarrollará durante la ejecución del Plan de Energización Rural y Sostenible (PERS) Cauca y busca tener información en torno al aprovechamiento de la energía por fuente, tenencia y usos para diversos sectores, en especial, el residencial y otros como el comercial e industrial.
+
+
+Adicionalmente se cuenta con un repositorio GIT-Hub en el cuál se tienen los controles de versiones y archivos necearios para el desarrollo del proyecto. (see <https://github.com/cristian42253/PERS_Cauca> )
+
+
+# Material adicional
+
+Para realizar los cálculos de los factores de expansión, es de recordar que la aproximación es mediante la obtención de las probabilidades de que cada elemento de la encuesta represente  la población objeto de estudio. En el caso particular del PERS Cauca se tienen las probabilidades desagregadas por municipios y también la agregación por sub-regiones
+
+## Cálculo factores de expansión
+
+Recordemos que para el cálculo de los factores de expansión se utilizará las probabilidades de obtener cada uno de los elementos de la población objeto de estudio, para ello se usa la fórmula de Bayes desglosada en términos de las condiciones.
+
+### Formula de Bayes
+
+Deacuerdo al Teorema de Bayes, sabemos que una representación valida es,
+
+$$P(\theta|x)=\frac{P(x|\theta)P(\theta)}{\int_{\Theta}P(x|\theta)P(\theta)d\theta}$$
+
+Donde $x$ corresponde de manera simple a la información con la que se cuenta, para el caso particular del estudio las viviendas del departamento del Cauca, con acceso a energía eléctrica y sin acceso a la misma según la fuente del DANE y UPME. $\theta$ es la información o parámetro que deseamos estimar, en nuestro caso particular la probabilidad de cada elemento de la población objeto de estudio para representar por medio de la encuesta. Finalmente $\int_{\Theta}P(x|\theta)P(\theta)d\theta$ representa la probabilidad total en el universo de estudio, en nuestro caso particular las viviendas de la zona rural del departamento del Cauca. Recordemos que según la visión del teorema de Bayes, el cálculo de las probabilidades se usa bajo el supuesto de información completa y fiable.
+
+
+### Aplicación Casos PERS- Cauca
+
+Recordemos que los Factores de expansión para el PERS Cauca son:
+
+|Región|	Número de Encuestas|	Factor de Expansión|	Población Expandida|
+|----------|:-------------:|------:|------:|
+|Centro    | 507| 168| 	 85.641| 
+|Norte     | 306| 266| 	 81.139| 
+|Oriente   | 150| 144| 	 21.562| 
+|Occidente | 707|	 27| 	 19.227| 
+|Sur|	206|	 217| 	 44.748| 
+|Macizo|	106|	 230| 	 24.403| 
+|Bota caucana|	109|	 82| 	 8.923|
+|Total|	2091|	 ** | 	 285.643| 
+
+Como nuestro objetivo es la obtención de una muestra representativa del departamento del Cauca visto a través de las subregiones que componen la división territorial del mismo, se asumirá que la escogencia de cada Subregión es equiprobable, lo que quiere decir que cada una de las viviendas al interior de las sub-regiones y de los municipios que cumplen con las condiciones propias del marco muestral tienen igual probabilidad de ser elegidas,  de igual forma en conjunto con los datos del tamaño de muestral definido apriori se tiene la siguiente representación. $P(Viviendas \cap No\,\,Energía)$. Por tanto necesitaremos la probabilidad de obtener una Vivienda de la zona rural  y con un IR mayor a 40\%, dado que dichas viviendas no cuentan con fluido eléctrico. Para ello se define el cálculo de la siguiente forma.
+
+$$P(Viviendas|No\,\,Energía)=\frac{P(Viviendas \cap No\,\, Energia)}{P(Viviendas)}$$
+Donde podemos obtener la probabilidad de obtener una vivienda que no cuenta con fluido electrico como,
+
+$$P(Viviendas|No\,\,Energía)*P(Viviendas)=P(Viviendas \cap No\,\,Energia)$$
+
+Para el caso del centro se tiene 
+
+$$P(Viviendas_{Centro} \cap No\,\,Energia_{Centro})= \frac{1}{7}*\frac{1}{24}$$
+en donde se tiene que para obtener el factor de expansión será en resumen el cociente entre 1 y la probabilidad de $P(Viviendas_{centro}\cap No\,\,Energía_{centro})$. Para la zona centro, será $\frac{1}{0.00595238}=768$.
+
+Ahora bien, recordemos que para escoger un elemento de la población muestral en la sub región centro se tiene.
+ 
+* $P(Sub-region_{Centro})=\frac{1}{7}$, dado que es de interés capturar la máxima información posible del departamento, para ello se decidió que todas las sub-regiones estarían representadas (7 sub- regiones).
+
+* $P(Intra\,\,Sub-region_{Centro})=\frac{85641}{285643}*\frac{1}{7.1956}\approx \frac{1}{24}$,  se multiplica la probabilidad de obtener una vivienda dentro la sub región por la proporción equivalente de la submuestra con las condiciones de no contar con el fluido eléctrico. (Intra sub región significa que se considera la población dentro de cada sub región) 
+
+De esta forma se tendrá que la probabilidad de cada escoger una vivienda con las características mencionadas anteriormente en la zona centro es la multiplicación entre ambas probabilidades. Es decir,
+
+$$P(Viviendas_{centro}\cap No\,\,Energía_{centro})= \frac{1}{7}*\frac{1}{24}$$
+Por lo que el Factor de Expansión (FE) será,
+
+$$FE=\frac{1}{P(Viviendas_{centro}\cap No\,\,Energía_{centro})}=768$$
+
+
+
+# Anexo Obtención Muestra
+
+A continuación se presentan los códigos por los cuales se obtuvieron las diferentes muestras para aplicar las encuestas.
+
+```{r cod1, eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+## packages necesaries
+packages = c("tidyverse", "pwr",
+             "Sample.Size", "sampling","samplesize")
+
+## Now load or install&load all
+package.check <- lapply(
+  packages,
+  FUN = function(x) {
+    if (!require(x, character.only = TRUE)) {
+      install.packages(x, dependencies = TRUE)
+      library(x, character.only = TRUE)
+    }
+  }
+)
+
+# Load packages
+load_pkg <- rlang::quos(tidyverse, pwr, Sample.Size, sampling, samplesize)
+
+invisible(lapply(lapply(load_pkg, rlang::quo_name),
+                 library,
+                 character.only = TRUE
+))
+
+# Calculate sampling
+delta <- 1.45
+sigma <- 14.5
+d <- delta/sigma
+pwr.t.test(d=d, sig.level=.05, power = .90, type = 'two.sample')
+```
+
+
+
