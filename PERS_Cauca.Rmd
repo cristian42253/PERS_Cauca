@@ -1,5 +1,6 @@
 ---
 output:
+  word_document: default
   pdf_document:
     citation_package: natbib
     fig_caption: yes
@@ -137,7 +138,22 @@ Por lo que el Factor de Expansión (FE) será,
 
 $$FE=\frac{1}{P(Viviendas_{centro}\cap No\,\,Energía_{centro})}=768$$
 
+### Casos completos
 
+Tal y como se mostró anteriormente se puede notar que al realizar los procedimientos se tienen los valores correspondientes de las probavilidades sigueindo el teorema de Bayes, lo cuaál permite obtener los factores de expansión, en resumen se puede ver los cálculos necesarios para obtener dichos resultados tal y como lo vemos a continuación.
+
+
+
+
+| |P(Viviendas n No energía)|	P(Sub Región)|	P(Intra Sub Región)	|FE= (1/P(Viviendas n No energía))|
+|---------- |----------|:-------------:|------:|------:|
+|Centro|	(1/7)*(1/24)|	 1/7	|(85641/285643)*(1/7.1956)|	168|
+|Norte|	(1/7)*(1/38)|	1/7	| (81139/285643)*(1/10.7942)|	266|
+|Oriente|	(1/7)*(7/144)|	1/7|	(21562/285643)*(1/1.55285)|	144|
+|Occidente|	(1/7)*(7/27)|	1/7|	(19227/285643)*(1/0.2596)|	27|
+|Sur|	(1/7)*(1/31)|	1/7	|(44748/285643)*(1/4.86396)	| 217|
+|Macizo|	(1/7)*(7/230)	|1/7|	(24403/285643)*(1/2.8071)|	230|
+|Bota Caucana|	(1/7)*(7/82)|	1/7|	(8923/285643)*(1/0.365934)|	82|
 
 # Anexo Obtención Muestra
 
