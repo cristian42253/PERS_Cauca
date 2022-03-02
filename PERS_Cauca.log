@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.29)  26 FEB 2022 12:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.29)  26 FEB 2022 19:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -789,22 +789,46 @@ LaTeX Warning: Command \' invalid in math mode on input line 300.
 
 LaTeX Warning: Command \' invalid in math mode on input line 303.
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-12.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 313.
 
-LaTeX Font Warning: Font shape `T1/lmtt/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 313.
+Overfull \hbox (17.20395pt too wide) in paragraph at lines 322--324
+ \T1/lmr/m/n/12 (-20) (1/P(Viviendas
+ []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-340.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
+
+Overfull \hbox (77.21492pt too wide) in paragraph at lines 326--326
+ []|\T1/lmr/m/n/12 (-20) (85641/285643)*(1/7.1956)|
+ []
+
+
+Overfull \hbox (82.97241pt too wide) in paragraph at lines 327--327
+ []|\T1/lmr/m/n/12 (-20) (81139/285643)*(1/10.7942)|
+ []
+
+
+Overfull \hbox (82.97241pt too wide) in paragraph at lines 328--328
+ []|\T1/lmr/m/n/12 (-20) (21562/285643)*(1/1.55285)|
+ []
+
+
+Overfull \hbox (77.21492pt too wide) in paragraph at lines 329--329
+ []|\T1/lmr/m/n/12 (-20) (19227/285643)*(1/0.2596)|
+ []
+
+
+Overfull \hbox (82.97241pt too wide) in paragraph at lines 330--330
+ []|\T1/lmr/m/n/12 (-20) (44748/285643)*(1/4.86396)|
+ []
+
+
+Overfull \hbox (77.21492pt too wide) in paragraph at lines 331--331
+ []|\T1/lmr/m/n/12 (-20) (24403/285643)*(1/2.8071)|
+ []
+
+
+Overfull \hbox (82.97241pt too wide) in paragraph at lines 332--332
+ []|\T1/lmr/m/n/12 (-20) (8923/285643)*(1/0.365934)|
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -814,6 +838,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
+43.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 344.
+
+LaTeX Font Warning: Font shape `T1/lmtt/bx/it' in size <12> not available
+(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 344.
+
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
+371.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 
 Package caption Warning: Unused \captionsetup[figure] on input line 119.
 See the caption package documentation for explanation.
@@ -836,11 +876,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5] (./PERS_Cauca.aux) ) 
 Here is how much of TeX's memory you used:
- 17737 strings out of 478994
- 273800 string characters out of 5858184
- 651712 words of memory out of 5000000
- 34804 multiletter control sequences out of 15000+600000
- 448310 words of font info for 99 fonts, out of 8000000 for 9000
+ 17745 strings out of 478994
+ 273890 string characters out of 5858184
+ 656847 words of memory out of 5000000
+ 34807 multiletter control sequences out of 15000+600000
+ 448401 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  85i,11n,88p,515b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/
@@ -860,10 +900,10 @@ ic/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtk
 10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtko10.pfb></
 usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/
 texlive/2021/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on PERS_Cauca.pdf (5 pages, 403206 bytes).
+Output written on PERS_Cauca.pdf (5 pages, 404108 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 26688 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 145 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
+ 26696 words of extra memory for PDF output out of 29859 (max. 10000000)
 
